@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculadora</title>
+</head>
+<body>
+    <!-- corpo da calculadora -->
+    <section id="canvas">
+        <!-- a saida dos comandos -->
+       <input type="text" value="0">
+        <!-- a entrada dos comandos -->
+        <section class="teclado">
+                <ul id="operadores-cima">
+                    <li class="op_key" op="clear">c</li>
+                    <li class="op_key" op="chage">+/-</li>
+                    <li class="op_key" op="mod">%</li>
+                    <li class="op_key" op="div">/</li>
+                </ul>
+            <div class="digitos">
+                <ul id="numeros">
+                    <li class="digitos_individuais" onclick="numero(7)">7</li> 
+                    <li class="digitos_individuais" onclick="numero(8)"">8</li>
+                    <li class="digitos_individuais" onclick="numero(9)">9</li>
+                    <li class="digitos_individuais" onclick="numero(4)">4</li>
+                    <li class="digitos_individuais" onclick="numero(5)">5</li>
+                    <li class="digitos_individuais" onclick="numero(6)">6</li>
+                    <li class="digitos_individuais" onclick="numero(1)">1</li>
+                    <li class="digitos_individuais" onclick="numero(2)">2</li>
+                    <li class="digitos_individuais" onclick="numero(3)">3</li>
+                    <li class="digitos_individuais" onclick="numero(0)">0</li>
+                    <li class="digitos_individuais" ></li>
+                    <li class="digitos_individuais" ></li>
+
+                </ul>
+                <ul id="operadores-lado">
+                    <li class="op_key" op="mult">*</li>
+                    <li class="op_key" op="subt">-</li>
+                    <li class="op_key" op="add">+</li>
+                    <li class="op_key" op="equal">=</li>
+                </ul>
+            </div>
+        </section>
+    </section>
+</body>
+<script src="app.js"></script>
+</html>

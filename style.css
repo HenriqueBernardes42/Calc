@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* corpo da calculadora */
+#canvas{
+    width: 50vh;
+    height: 70vh;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-direction: column;
+}
+
+/* ******************** */
+input{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    font-size: 35px;
+}
+
+/* ******************* */
+.teclado{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+    #operadores-cima{
+        display: flex;
+        flex-wrap: wrap;
+        height: 20%;
+    }
+
+    #operadores-cima li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        color : whitesmoke;
+        font-size: 5vh;
+        background-color: #222;
+    }
+
+    .digitos{
+        height: 80%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #numeros{
+        width: 80%;
+        display: flex;
+        border: 1px solid black;
+        flex-wrap: wrap;
+    }
+
+    .digitos_individuais{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 33.3%;
+        background-color: black;
+        border: 1px solid #111;
+        font-size: 4vh;
+        color: aliceblue;
+    }
+
+    #operadores-lado{
+        width: 14vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #operadores-lado li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 25%; 
+        background-color: #222;
+        color: whitesmoke;
+        font-size: 5vh;
+
+    }
+    
